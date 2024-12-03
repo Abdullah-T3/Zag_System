@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zag_system_task1/core/theming/color.dart';
-import 'package:zag_system_task1/features/onBording/screens/onbording_findGreateWork.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:zag_system_task1/features/onBording/screens/onbording_second_screen.dart';
-import 'package:zag_system_task1/features/onBording/screens/onbording_third_screen.dart';
+import 'package:zag_system_task1/core/theming/color.dart';
+
+import 'onbording_findGreateWork.dart';
+import 'onbording_second_screen.dart';
+import 'onbording_third_screen.dart';
 
 // ignore: must_be_immutable
 class OnbordingScreen extends StatelessWidget {
