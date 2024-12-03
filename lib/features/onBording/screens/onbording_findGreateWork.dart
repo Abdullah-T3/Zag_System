@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:zag_system_task1/core/helpers/extantions.dart';
 import 'package:zag_system_task1/core/theming/color.dart';
 import 'package:zag_system_task1/core/theming/styles.dart';
 
@@ -40,7 +41,10 @@ class OnbordingFindgreatework extends StatelessWidget {
             height: 50.w,
             decoration: BoxDecoration(color: ColorsManager.buttonColor, borderRadius: BorderRadius.circular(20.r)),
             child: MaterialButton(
-              onPressed: () {},
+              onPressed: () {
+
+                context.pushNamed('/homeScreen');
+              },
               child: Text('Login', style: TextStyles.font20whiteMedium),
             ),
           ),

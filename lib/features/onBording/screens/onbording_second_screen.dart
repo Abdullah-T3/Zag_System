@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:zag_system_task1/core/helpers/extantions.dart';
 import 'package:zag_system_task1/core/theming/color.dart';
 import 'package:zag_system_task1/core/theming/styles.dart';
 
-class OnbordingThirdScreen extends StatelessWidget {
-  const OnbordingThirdScreen({super.key});
+class OnbordingSecondScreen extends StatelessWidget {
+  const OnbordingSecondScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +20,12 @@ class OnbordingThirdScreen extends StatelessWidget {
           SizedBox(
             height: 140.w,
           ),
-          Image.asset('assets/images/onbording_3.png'),
+          Image.asset('assets/images/onbording_2.png'),
           SizedBox(
             height: 30.w,
           ),
           Text(
-            'Contact the company automatically',
+            'Find opportunities for every stage of your freelance',
             style: TextStyles.font20blackBold,
           ),
           SizedBox(
@@ -41,7 +42,8 @@ class OnbordingThirdScreen extends StatelessWidget {
             decoration: BoxDecoration(color: ColorsManager.buttonColor, borderRadius: BorderRadius.circular(20.r)),
             child: MaterialButton(
               onPressed: () {
-                
+                                context.pushNamed('/homeScreen');
+
               },
               child: Text('Login', style: TextStyles.font20whiteMedium),
             ),
