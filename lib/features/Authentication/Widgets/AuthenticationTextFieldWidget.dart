@@ -28,7 +28,6 @@ class _AuthenticationTextFieldWidgetState extends State<AuthenticationTextFieldW
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.w),
-
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.w),
@@ -45,6 +44,7 @@ class _AuthenticationTextFieldWidgetState extends State<AuthenticationTextFieldW
                 : null ,
         ),
 
+          textInputAction: TextInputAction.next,
           obscureText: widget.isPassword ? PassInvisible : false,
 
         ),
