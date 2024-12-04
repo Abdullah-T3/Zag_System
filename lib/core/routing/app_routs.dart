@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zag_system_task1/core/routing/routs.dart';
-import 'package:zag_system_task1/features/home/home_page_screen.dart';
+import 'package:zag_system_task1/features/home/screens/home_page_screen.dart';
 import 'package:zag_system_task1/features/onBording/screens/onBording_screen.dart';
 
 class AppRouts {
