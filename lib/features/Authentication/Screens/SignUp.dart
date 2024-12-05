@@ -34,31 +34,31 @@ class _SignUpScreenState extends State<SignUpScreen> {
                Container(
                  width: 300.w,
                  margin: EdgeInsetsDirectional.only(top: 55.h),
-                 child: AuthenticationTextFieldWidget(Title: 'First Name'),
+                 child: AuthenticationTextFieldWidget(title: 'First Name'),
                ),
 
                Container(
                  width: 300.w,
                  margin: EdgeInsetsDirectional.only(top: 20.h),
-                 child: AuthenticationTextFieldWidget(Title: 'Last Name'),
+                 child: AuthenticationTextFieldWidget(title: 'Last Name'),
                ),
 
                Container(
                  width: 300.w,
                  margin: EdgeInsetsDirectional.only(top: 20.h),
-                 child: AuthenticationTextFieldWidget(Title: 'Email'),
+                 child: AuthenticationTextFieldWidget(title: 'Email'),
                ),
 
                Container(
                  width: 300.w,
                  margin: EdgeInsetsDirectional.only(top: 20.h),
-                 child: AuthenticationTextFieldWidget(Title: 'User Name'),
+                 child: AuthenticationTextFieldWidget(title: 'User Name'),
                ),
 
                Container(
                  width: 300.w,
                  margin: EdgeInsetsDirectional.only(top: 20.h),
-                 child: AuthenticationTextFieldWidget(Title: 'Password',isPassword: true,),
+                 child: AuthenticationTextFieldWidget(title: 'Password',isPassword: true,),
                ),
 
 

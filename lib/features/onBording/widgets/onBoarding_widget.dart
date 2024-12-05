@@ -5,9 +5,11 @@ import 'package:zag_system_task1/core/routing/routs.dart';
 import 'package:zag_system_task1/core/theming/color.dart';
 import 'package:zag_system_task1/core/theming/styles.dart';
 
-class OnbordingFindgreatework extends StatelessWidget {
-  const OnbordingFindgreatework({super.key});
-
+class OnbordingscreenWidget extends StatelessWidget {
+   const OnbordingscreenWidget({super.key, required this.title, required this.description, required this.image});
+  final String title;
+  final String description ;
+  final String image ;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,31 +21,30 @@ class OnbordingFindgreatework extends StatelessWidget {
             style: TextStyles.font20blackregular,
           ),
           SizedBox(
-            height: 100.w,
+            height: 140.w,
           ),
-          Image.asset('assets/images/onbording_findGreatWork.png'),
+          Image.asset('assets/images/onbording_2.png'),
           SizedBox(
-            height: 20.w,
+            height: 30.w,
           ),
           Text(
-            'Find Great Work',
+            title,
             style: TextStyles.font20blackBold,
           ),
           SizedBox(
             height: 10.w,
           ),
           Text(
-            "small description here about title and explain the app feature in small sentence",
+           description,
             style: TextStyles.font15blackregular,
           ),
-          Spacer(),
+          const Spacer(),
           Container(
             width: 300.w,
             height: 50.w,
-            decoration: BoxDecoration(color: ColorsManager.buttonColor, borderRadius: BorderRadius.circular(20.r)),
+            decoration: BoxDecoration(color: ColorsManager.primaryColor, borderRadius: BorderRadius.circular(20.r)),
             child: MaterialButton(
               onPressed: () {
-
                 context.pushNamed(Routes.SignUpScreen);
               },
               child: Text('Login', style: TextStyles.font20whiteMedium),
