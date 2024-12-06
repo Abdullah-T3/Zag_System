@@ -8,8 +8,11 @@ import '../../../core/routing/routs.dart';
 import '../Widgets/AuthenticationTextFieldWidget.dart';
 
 class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
 
-State<SignUpScreen> createState() => _SignUpScreenState();
+
+@override
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
@@ -67,7 +70,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                  height: 50.h,
                  margin: EdgeInsetsDirectional.only(top: 50.h),
                  child: ElevatedButton(
-                     style: ButtonStyle(backgroundColor: WidgetStateProperty.all(Color(0XFFF1C0F44))),
+                     style: ButtonStyle(backgroundColor: WidgetStateProperty.all(const Color(0xfff1c0f44))),
                      onPressed: (){
 
                        context.pushNamed(Routes.homePage);

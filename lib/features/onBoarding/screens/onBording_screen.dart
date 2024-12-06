@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:zag_system_task1/core/theming/color.dart';
-import '../../onBording/widgets/onBoarding_widget.dart';
+import '../widgets/onBoarding_widget.dart';
 
 // ignore: must_be_immutable
 class OnbordingScreen extends StatelessWidget {
@@ -36,16 +36,16 @@ class OnbordingScreen extends StatelessWidget {
               ],
             ),
             Positioned(
-              bottom: 140.h,
-              left: 165.w,
+              bottom: 150.h,
+              left: 375 / 2.w,
               child: SizedBox(
                 height: 40.h,
                 width: 40.w,
                 child: SmoothPageIndicator(
                   controller: _controller,
                   count: 3,
-                  effect: const ExpandingDotsEffect(
-                    dotColor: ColorsManager.dotColor,
+                  effect: const WormEffect(
+                    dotColor: Colors.grey,
                     activeDotColor: ColorsManager.primaryColor,
                   ),
                 ),
