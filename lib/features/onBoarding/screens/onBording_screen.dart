@@ -37,7 +37,7 @@ class OnbordingScreen extends StatelessWidget {
             ),
             Positioned(
               bottom: 150.h,
-              left: 375 / 2.w,
+              left: 155.w,
               child: SizedBox(
                 height: 40.h,
                 width: 40.w,

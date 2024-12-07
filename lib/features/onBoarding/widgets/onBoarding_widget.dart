@@ -23,7 +23,7 @@ class OnbordingscreenWidget extends StatelessWidget {
             children: [
               TextButton(
                   onPressed: () {
-                    context.pushNamed(Routes.SignUpScreen);
+                    context.pushReplacementNamed(Routes.SignUpScreen);
                   },
                   style: TextButton.styleFrom(foregroundColor: ColorsManager.primaryColor),
                   child: const Text(
@@ -56,7 +56,7 @@ class OnbordingscreenWidget extends StatelessWidget {
             decoration: BoxDecoration(color: ColorsManager.primaryColor, borderRadius: BorderRadius.circular(20.r)),
             child: MaterialButton(
               onPressed: () {
-                context.pushNamed(Routes.SignUpScreen);
+                context.pushReplacementNamed(Routes.SignUpScreen);
               },
               child: Text('Login', style: TextStyles.font20whiteMedium),
             ),
@@ -74,7 +74,7 @@ class OnbordingscreenWidget extends StatelessWidget {
                     style: TextStyle(color: Colors.blue, fontSize: 15.sp),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
-                        print('Navigates to Login Screen');
+                        context.pushReplacementNamed(Routes.LoginScreen);
                       }),
               ],
             ),
@@ -89,7 +89,7 @@ class OnbordingscreenWidget extends StatelessWidget {
                 style: TextStyle(color: Colors.blue, fontSize: 15.sp),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                    print('Navigates to Reset Password Screen');
+                    context.pushReplacementNamed(Routes.ForgotPassScreen);
                   },
               ),
             ]),

@@ -43,7 +43,7 @@ class ForgotPassScreen extends StatelessWidget {
                       style: ButtonStyle(backgroundColor: WidgetStateProperty.all(Color(0XFFF1C0F44))),
                       onPressed: (){
 
-                        context.pushNamed(Routes.homePage);
+                        context.pushReplacementNamed(Routes.homePage);
 
                       }, child: Text('Create Account',style: TextStyle(color: Colors.white,fontSize: 15.sp),)),
                 ),
@@ -59,7 +59,7 @@ class ForgotPassScreen extends StatelessWidget {
                           text: 'Login',
                           style: TextStyle(color: Colors.blue,fontSize: 15.sp),
                           recognizer: TapGestureRecognizer()..onTap = (){
-                            context.pushNamed(Routes.LoginScreen);
+                            context.pushReplacementNamed(Routes.LoginScreen);
 
                           }
                       )
@@ -78,7 +78,7 @@ class ForgotPassScreen extends StatelessWidget {
                         text: 'Sign Up',
                         style: TextStyle(color: Colors.blue,fontSize: 15.sp),
                         recognizer: TapGestureRecognizer()..onTap = (){
-                          context.pushNamed(Routes.SignUpScreen);
+                          context.pushReplacementNamed(Routes.SignUpScreen);
 
                         },
                       )
