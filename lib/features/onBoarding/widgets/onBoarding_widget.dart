@@ -23,7 +23,7 @@ class OnbordingscreenWidget extends StatelessWidget {
             children: [
               TextButton(
                   onPressed: () {
-                    context.pushNamed(Routes.signUpScreen);
+                    context.pushNamed(Routes.SignUpScreen);
                   },
                   style: TextButton.styleFrom(foregroundColor: ColorsManager.primaryColor),
                   child: const Text(
@@ -56,7 +56,7 @@ class OnbordingscreenWidget extends StatelessWidget {
             decoration: BoxDecoration(color: ColorsManager.primaryColor, borderRadius: BorderRadius.circular(20.r)),
             child: MaterialButton(
               onPressed: () {
-                context.pushNamed(Routes.signUpScreen);
+                context.pushNamed(Routes.SignUpScreen);
               },
               child: Text('Login', style: TextStyles.font20whiteMedium),
             ),
