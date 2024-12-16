@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:zag_system_task1/core/helpers/extantions.dart';
-
 import '../../core/routing/routs.dart';
+import '../../core/theming/color.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -30,8 +30,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         height: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(colors: [
-            Color(0xff1C0F44),
-            Color(0xff401528)
+            ColorsManager.primaryColorSplash,
+            ColorsManager.secondaryColorSplash
           ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
         ),
         child: const Center(
